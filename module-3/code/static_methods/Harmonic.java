@@ -1,3 +1,16 @@
+/******************************************************************************
+ *  Compilation:  javac Harmonic.java
+ *  Execution:    java Harmonic n
+ *  
+ *  Prints the nth harmonic number: 1/1 + 1/2 + ... + 1/n.
+ * 
+ *  $ java Harmonic 10
+ *  2.9289682539682538
+ *
+ *  $ java Harmonic 10000
+ *  9.787606036044348
+ *
+ ******************************************************************************/
 
 public class Harmonic { 
 
@@ -18,3 +31,4 @@ public class Harmonic {
         } // end for
     }// end main
 } // end class
+
