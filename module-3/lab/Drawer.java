@@ -1,3 +1,4 @@
+
 import java.awt.EventQueue;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
@@ -46,14 +47,46 @@ class Drawer extends JPanel {
         Graphics2D g2d = (Graphics2D) g;
 
         //<====> ADD YOUR DRAWING CODE HERE <==========>//
-
+        int x = 10, y = 10;
+        for(int i = 0; i < 30; ++i) {
+        	g2d.drawRect(x, y, 10, 10);
+        	y += 15;
+        	
+        }	
+        g2d.setColor(new Color(0, 0, 0));
+        y = 10; x += 15;
+        for(int i = 0; i < 30; ++i) {
+        	g2d.fillRect(x,  y, 10, 10);
+        	y += 15;
+        }
+        
+        g2d.setColor(new Color(200, 200, 200));
+        y = 10; x += 15;
+        for(int i = 0; i < 30; ++i) {
+        	g2d.fillOval(x, y, 10, 10);
+        	y += 15;
+        }
+       int width = getWidth();
+       int height = getHeight();
+       g2d.setColor(Color.RED);
+       String s = "Yer a graphics wizard, Harry!!";
+       g2d.drawString(s, (width / 2) - s.length() * 3,  height / 2);
+       
+       g2d.setColor(Color.MAGENTA);
+       Random random = new Random();
+       for(int i = 0; i < 2000; i++) {
+    	   x = Math.abs(random.nextInt()) % width;
+    	   y = Math.abs(random.nextInt()) % height;
+    	   g2d.drawLine(x, y, x + 2, y + 2);
+       }
        
     }
     
+
     public static void main(String[] args) {
         EventQueue.invokeLater(new Runnable() {
             @Override
-            public void run() { 
+            public void run() {
                 Drawer ex = new Drawer();
                 ex.setVisible(true);
             }
