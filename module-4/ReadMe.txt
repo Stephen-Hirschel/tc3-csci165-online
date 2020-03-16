@@ -15,8 +15,8 @@ Assignments: Each of the following assignments will be worth points
         ~ Reading: Test Driven Development and JUnit
         ~ Eclipse tutorial with JUnit
         ~ Write JUnit tests 
-    2) Due Monday 3/10 by midnight          - 20 Point Lab: Eclipse Debugging, Designing objects, JUnit testing
-    3) Due Saturday 3/14 by midnight        - 20 Point Assignment:  2016 Election Results Processing
+    2) Due Monday 3/9 by midnight          - 20 Point Lab: Eclipse Debugging, Designing objects, JUnit testing
+    3) Due Saturday 3/14 by midnight       - 20 Point Assignment:  2016 Election Results Processing
 
 The Module 4 directory contains the following folders/files. Read them in this order
 
